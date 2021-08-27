@@ -1,0 +1,166 @@
+:root {
+  --col-orange: #feac32;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.body-text {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  padding-top: 5px;
+  height: 50px;
+  background-color: white;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+#nav-bar {
+  position: relative;
+  display: grid;
+  right: 100px;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 30px;
+  align-items: center;
+}
+
+#header-img {
+  height: 30px;
+  width: auto;
+  margin-left: 20px;
+}
+
+h2 {
+  width: 100vw;
+}
+
+.nav-link {
+  font-family: 'Zilla Slab', serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--col-orange);
+  text-decoration-thickness: 5px;
+}
+
+#whatisit {
+  margin-top: 150px;
+}
+
+.img-logo {
+  height: 50px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#email {
+  margin-top: 50px;
+  height: 30px;
+  width: calc(100vw / 4);
+  text-align: center;
+
+}
+
+#submit {
+  margin: 10px;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid var(--col-orange);
+  cursor: pointer;
+  background-image: linear-gradient(135deg, var(--col-orange), white);
+}
+
+#submit:hover {
+  box-shadow: 2px 2px 5px grey;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+#howitworks {
+  padding: 50px 0;
+  background-color: black;
+}
+
+.container-vid {
+  width: 80vw;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+iframe {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#courses {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 100px;
+  justify-content: space-evenly;
+}
+
+#courses > div {
+  align-items: center;
+  height: 100px;
+  width: 250px;
+  padding: 80px 30px 0 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: var(--col-orange);
+}
+
+#courses > div:hover {
+  box-shadow: 5px 5px 5px grey;
+}
+
+footer {
+  margin-top: 80px;
+  padding-top: 20px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  #nav-bar {
+    right: 20px;
+  }
+  #email {
+    width: calc(100vw / 2);
+  }
+}

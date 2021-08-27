@@ -1,0 +1,111 @@
+:root {
+  --color1: #7ADCE3;
+  --color2: #29B9C4;
+  --color3: hsl(0, 0%, 35%);
+}
+main {
+  display: block;
+  text-align: center;
+  font-family: 'Secular One', sans-serif;
+}
+
+h1 {
+  font-size: 45px;
+  margin: 50px auto 0px auto;
+}
+
+.heading-font {
+  text-shadow: -3px -3px;
+  background: -webkit-linear-gradient(45deg, var(--color1), var(--color2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+hr {
+  width: 300px;
+  height: 5px;
+  margin-top: 0px;
+  background-color: var(--color1);
+  border: none;
+}
+
+.p-header {
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px var(--color3);
+}
+
+figcaption {
+  margin-top: 20px;
+  color: var(--color3);
+}
+
+#tribute-info {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.tribute-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+.tribute-content {
+  display: flex;
+  justify-content: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+}
+
+@media (max-width: 400px) {
+  .tribute-content {
+    font-size: 15px;
+  }
+}
+
+.p-container {
+  width: 60vw;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 15px 10px var(--color1);
+}
+
+.button {
+  position: relative;
+  padding: 10px;
+  width: 180px;
+  font-family: 'Secular One', sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 2px var(--color1);
+  background-color: var(--color2);
+  color: white;
+}
+
+.button:hover {
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
+}

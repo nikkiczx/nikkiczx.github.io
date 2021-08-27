@@ -1,0 +1,128 @@
+body {
+  display: block;
+  text-align: center;
+  font-family: 'Oxanium', cursive;
+  border: 2px solid black;
+  margin: 100px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px grey;
+}
+
+h1 {
+  font-size: 45px;
+  margin: 50px auto 0px auto;
+}
+
+h2 {
+  font-size: 30px;
+  width: 100%;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.header {
+  font-family: 'Megrim', cursive;
+}
+
+#description {
+  font-size: 18px;
+}
+
+#personal-details {
+  display: grid;
+  margin: auto;
+}
+
+input {
+  text-align: center;
+  font-family: 'Oxanium', cursive;
+  margin: 2px;
+  line-height: 2em;
+}
+
+#name, #email {
+  width: 300px;
+  font-size: 15px;
+}
+
+#number {
+  width: 100px;
+}
+
+hr {
+  width: 50vw;
+  height: 1px;
+  background-color: black;
+  border: none;
+}
+
+#dropdown {
+  font-family: 'Oxanium', cursive;
+  margin: 2px;
+  height: 2em;
+  width: 200px;
+  font-size: 15px;
+}
+
+legend {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.food-quality, textarea {
+  width: 80%;
+  margin: 50px auto;
+  padding: 50px 0px;
+  display: block;
+  justify-content: space-evenly;
+}
+
+.service-quality {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 50px 0px;
+}
+
+.instruction {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.container {
+  display: grid;
+  margin: 20px 0 40px 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: justify;
+}
+
+button {
+  height: 2em;
+  width: 7em;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.h2 {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  body {
+    margin: 5px;
+  }
+  label, .container {
+    display: block;
+  }
+}

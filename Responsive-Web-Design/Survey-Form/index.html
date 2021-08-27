@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Awesome Landing Page</title>
+</head>
+<body>
+    <h1 id="title" class="header">Restaurant Service Survey</h1>
+    <p id="description">Help us improve your dining experience.</p>
+
+    <form id="survey-form">
+      <section id="personal-details" class="mt-50">
+         <h2 class="header">Personal Details</h2>
+        <label id="name-label" for="name">Name:<strong style="color: red;">*</strong><input id="name" type="text" placeholder="Format: Steve Jobs" required></label>
+        <label id="email-label" for="email">Email :<strong style="color: red;">*</strong><input id="email" type="email" pattern="[^ @]*@[^ @]*" placeholder="Format: steve@apple.com" required></label>
+        <label id="number-label" for="number">Age :<input id="number" type="number" min="18" max="99" placeholder="Optional"></label>
+        <hr class="mt-50" >
+      </section>
+
+      <section id="section-dropdown" class="mt-50">
+        <label class="h2 header">Location</label>
+        <select id="dropdown">
+          <option value="paris">Paris</option>
+          <option value="london">London</option>
+          <option value="newyork">New York</option>
+          <option value="amsterdam">Amsterdam</option>
+          <option value="hongkong">Hong Kong</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="tokyo">Tokyo</option>
+        </select>
+        <hr class="mt-50">
+      </section>
+
+      <fieldset class="food-quality">
+        <legend class="header">Food Quality</legend>
+        <label><input type="radio" name="foodQuality" value="1">Unacceptable</label>
+        <label><input type="radio" name="foodQuality" value="2">Somewhat acceptable</label>
+        <label><input type="radio" name="foodQuality" value="3">Acceptable</label>
+        <label><input type="radio" name="foodQuality" value="4">Satisfactory</label>
+        <label><input type="radio" name="foodQuality" value="5">Delicious</label>
+      </fieldset>
+
+      <fieldset class="service-quality mt-50">
+        <legend class="header">Service Quality</legend>
+        <div class="instruction">Please select all that apply</div>
+        <div class="container">
+          <label><input type="checkbox" name="service-quality" value="drinks">Drinks were served promptly</label>
+          <label><input type="checkbox" name="service-quality" value="warm">Food was served warm</label>
+          <label><input type="checkbox" name="service-quality" value="attentive">The server was attentive</label>
+          <label><input type="checkbox" name="service-quality" value="water">Water was kept topped up</label>
+          <label><input type="checkbox" name="service-quality" value="dishes">Dishes were cleared promptly</label>
+          <label><input type="checkbox" name="service-quality" value="server">The server was courteous</label>
+        </div>
+      </fieldset>
+
+      <hr class="mt-50">
+      <label class="h2 header mt-50">Additional Comments</label>
+      <textarea class="margin-auto" rows="4"></textarea>
+
+      <button class="header" id="submit" type="submit">Submit</button>
+
+      <div class="mt-50" />
+    </form>
+
+</body>
+</html>

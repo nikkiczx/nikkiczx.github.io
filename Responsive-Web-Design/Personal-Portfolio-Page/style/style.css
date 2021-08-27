@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+}
+
+.logo-github {
+  max-height: 30px;
+
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  text-align: right;
+}
+
+.container-nav {
+  position: relative;
+  background-image: linear-gradient(to right, #CCFFFF, #FFCCCC);
+  padding: 10px 50px;
+}
+
+.container-nav > a {
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding: 0 50px;
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+#projects {
+  background-color: #fcffa4;
+  height: fill-available;
+  padding-bottom: 50px;
+}
+
+.container-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.project-tile {
+  display: flex;
+  width: 350px;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-tile:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .container-nav > a {
+    padding: 10px 10px;
+  }
+}
